@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"github.com/VishalTanwani/gochat/socket/websocket"
+	"github.com/VishalTanwani/gochat-socket/websocket"
 	"log"
 	"net/http"
 )

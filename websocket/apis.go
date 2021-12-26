@@ -44,7 +44,7 @@ func UserAlreadyInRoom(token, roomID string) (bool, error) {
 	if err != nil {
 		return false, err
 	}
-	resp, err := http.Post("http://localhost:4000/room/details", "application/json; charset=utf-8", bytes.NewBuffer(jsonReq))
+	resp, err := http.Post("https://gochat-apiserver.herokuapp.com/room/details", "application/json; charset=utf-8", bytes.NewBuffer(jsonReq))
 	if err != nil {
 		fmt.Println("error at fetching room details", err)
 	}
@@ -59,7 +59,7 @@ func UserAlreadyInRoom(token, roomID string) (bool, error) {
 	}{Token: token, RoomID: roomID}
 	jsonReq, err = json.Marshal(temp)
 
-	resp, err = http.Post("http://localhost:4000/user/profile", "application/json; charset=utf-8", bytes.NewBuffer(jsonReq))
+	resp, err = http.Post("https://gochat-apiserver.herokuapp.com/user/profile", "application/json; charset=utf-8", bytes.NewBuffer(jsonReq))
 	if err != nil {
 		fmt.Println("error at fetching user details", err)
 	}
@@ -82,7 +82,7 @@ func SendDataToDB(msg Message) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	resp, err := http.Post("http://localhost:4000/message/send", "application/json; charset=utf-8", bytes.NewBuffer(jsonReq))
+	resp, err := http.Post("https://gochat-apiserver.herokuapp.com/message/send", "application/json; charset=utf-8", bytes.NewBuffer(jsonReq))
 	if err != nil {
 		return "", err
 	}

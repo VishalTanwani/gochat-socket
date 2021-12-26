@@ -1,5 +1,6 @@
-github.com/dgrijalva/jwt-go v1.0.2 h1:KPldsxuKGsS2FPWsNeg9ZO18aCrGKujPoWXn2yo+KQM=
-github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
+github.com/VishalTanwani/gochat v0.0.0-20211225161140-d063bab2239e h1:5to4zMxVx4YdB1xxX1Nof3rXzuW9PgJR2PZC88LgdjE=
+github.com/VishalTanwani/gochat/socket v0.0.0-20211225161140-d063bab2239e h1:UHOybFr5g5hidbIrJdw3y5DfwZ4KZdqSJerO+ThtflQ=
+github.com/VishalTanwani/gochat/socket v0.0.0-20211225161140-d063bab2239e/go.mod h1:i3B8oOgXKN7LOfbg58xNC3BSuTnOF//0F1OEv+IPtxY=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
 github.com/gorilla/websocket v1.4.2 h1:+/TMaTYc4QFitKJxsQ7Yye35DkWvkdLcvGKqM+x0Ufc=
 github.com/gorilla/websocket v1.4.2/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
