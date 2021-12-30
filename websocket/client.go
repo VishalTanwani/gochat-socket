@@ -68,12 +68,6 @@ func (c *Client) joinRoom(msg Message) {
 	c.Name = msg.UserName
 	c.Token = msg.Token
 	room.Register <- c
-	check, err := UserAlreadyInRoom(msg.Token, msg.RoomID)
-	if err == nil {
-		if !check {
-			room.Broadcast <- msg
-		}
-	}
 
 }
 
